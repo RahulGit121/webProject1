@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rahul Fitness Gym</title>
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap" rel="stylesheet">
+<!-- for logo font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+<!-- for body -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Ubuntu&display=swap" rel="stylesheet">
+
+<style>
+    body {
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url('gym.jpg');
+        font-family: 'Abril Fatface', cursive;
+        font-family: 'Ubuntu', sans-serif;
+        background-repeat: no-repeat;
+        
+    }
+
+    .mid {
+        border: 2px solid rgb(100, 100, 100);
+        margin: 10px auto;
+        width: 40%;
+
+    }
+
+    .mid a:hover {
+        color: yellow;
+
+    }
+
+
+    .right {
+        display: inline-block;
+        /* border: 2px solid green; */
+        position: absolute;
+        top: 10px;
+        right: 40px;
+        
+    }
+    
+    .right button{
+        cursor: pointer;
+    }
+    
+
+    .left {
+        display: inline-block;
+        /* border: 2px solid yellow; */
+        position: absolute;
+        top: 17px;
+        left: 30px;
+
+
+    }
+
+    .navbar a {
+        display: inline-block;
+        text-decoration: none;
+        color: white;
+        font-family: 'Barlow Condensed', sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+        margin: 5px 30px;
+        padding: 10px;
+
+    }
+
+    .logo {
+        display: inline-block;
+        color: white;
+        position: relative;
+        left: 3px;
+        top: -26px;
+        font-family: 'Abril Fatface', cursive;
+        font-size: 24px;
+        cursor: pointer;
+
+    }
+
+
+    .but2 {
+        background-color: yellow;
+        border: 2px solid black;
+        padding: 10px;
+        font-size: 18px;
+    }
+
+    .but3 {
+        border: 2px solid yellow;
+        background-color: black;
+        color: yellow;
+        padding: 10px;
+        font-size: 17px;
+    }
+
+    .para {
+        font-family: 'Abril Fatface', cursive;
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 50px;
+        margin: 14% 40% auto 64px;
+        cursor: default;
+
+    }
+
+    .temp1{
+        font-family: 'Abril Fatface', cursive;
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 40px;
+        margin: 125px 74% -154px 135px;
+        color: yellow;
+        cursor:pointer;
+        
+       
+    }
+
+    .container p{
+        
+        border: 2px solid yellow;
+        width: 255px;
+        padding: 20px;
+    }
+
+    .rightform{
+        float: right;
+        margin: -30% 95px auto auto;
+        border: 2px solid yellow;
+        padding: 27px;
+    }
+    .rightform h3{
+        margin-left: 65px;
+        margin-top: 5px;
+    }
+ 
+    .submitbutton{
+       background-color: yellow;
+       border: 2px yellow solid;
+       border-radius: 10px;
+       margin-left: 95px;
+       cursor: pointer;
+  
+    }
+    
+</style>
+
+<body>
+
+
+    <header class="header">
+        <div class="left">
+            <img src="icon.png" alt="icon">
+            <div class="logo">Rahul Fitness</div>
+        </div>
+
+        <div class="mid">
+            <ul class="navbar">
+                <a href="#">Home</a>
+                <a href="#">About Us</a>
+                <a href="#">Gallery</a>
+                <a href="#">Contact Us</a>
+            </ul>
+        </div>
+
+        <div class="right">
+
+            <button class="but2">Free Trial</button>
+            <button class="but3">Join Now</button>
+        </div>
+
+    </header>
+
+    <div class="container">
+    <div class="temp1">
+        <p>START TODAY</p>
+    </div>
+    </div>
+
+    <div class="para">
+        <p>“I don’t count my sit-ups. I only start counting when it starts hurting because they’re the only ones that
+            count.”</p>
+    </div>
+
+<div class="rightform">
+    <h3>Register Now!!!</h3>
+    <form action="backend.php">
+        <div>
+        First Name: <input type="text">
+    </div>
+        <br>
+        Last Name:  <input type="text">
+        <br>
+        <br>
+        <div class="age">
+        Age: <input type="number" class="box">
+        </div>
+        <br>
+        <div>
+        Gender:<input type="radio" name="gender">Male 
+        <input type="radio" name="gender">Female 
+            </div>
+        
+        <br>
+        Mobile No.: <input type="number" name="phno" id="">
+        <br>
+        <br>
+        Email Id: <input type="email">
+        <br>
+        <br>
+        <div class="submit">
+       <button class="submitbutton">Submit</button>
+        </div>
+    </form>
+</div>
+    
+</body>
+
+</html>
